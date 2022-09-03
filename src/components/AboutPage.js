@@ -9,7 +9,7 @@ import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitlte'
 import dragon from '../assets/Images/solo-dragon.png'
-import img from '../assets/Images/backgroundNosotros.jpeg'
+import img from '../assets/Images/background-nosotros.jpeg'
 import { motion } from 'framer-motion';
 
 const MainContainer = styled(motion.div)`

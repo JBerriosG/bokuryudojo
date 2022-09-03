@@ -11,7 +11,7 @@ import { Work } from "../data/WorkData";
 import Card from '../subComponents/Card';
 import { YinYang } from './AllSvgs';
 import BigTitlte from '../subComponents/BigTitlte';
-import img from '../assets/Images/backgroundMembers.jpeg'
+import img from '../assets/Images/background-members.jpeg'
 
 const MainContainer = styled(motion.div)`
 background: url(${img});
