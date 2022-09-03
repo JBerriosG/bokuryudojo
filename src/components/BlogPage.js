@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
-import img from '../assets/Images/background-noticias.jpeg'
+import img from '../assets/Images/background-noticias.png'
 import LogoComponent from '../subComponents/LogoComponent'
 import SocialIcons from '../subComponents/SocialIcons'
 import PowerButton from '../subComponents/PowerButton'
