@@ -53,21 +53,26 @@ img{
 const Main = styled.div`
   border: 2px solid ${(props) => props.theme.text};
   color: ${(props) => props.theme.text};
-  padding: 2rem;
-  width: 50vw;
-  height: 60vh;
+  padding: 1rem;
+  width: 70vw;
+  height: 70vh;
   z-index: 3;
   line-height: 1.5;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: calc(0.6rem + 1vw);
- backdrop-filter: blur(4px);
+  font-size: calc(0.7rem + 1vw);
+  backdrop-filter: blur(4px);
   
   position: absolute;
-  left: calc(5rem + 5vw);
+  left: calc(3rem + 3vw);
   top: 10rem;
   font-style: italic;
+
+  @media(min-width: 768px){
+    left: calc(5rem + 5vw);
+    font-size: calc(0.6rem + 1vw);
+  }
 `
 const container = {
 

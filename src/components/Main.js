@@ -31,9 +31,13 @@ const Contact = styled(NavLink)`
 color: ${props => props.theme.text};
 position: absolute;
 top: 2rem;
-right: calc(1rem + 2vw);
+right: calc(2rem + 2vw);
 text-decoration: none;
 z-index:1;
+
+@media(min-width: 768px){
+    right: calc(2rem + 2vw);
+}
 `
 const BLOG = styled(NavLink)`
 color: ${props => props.theme.text};
@@ -158,7 +162,7 @@ const Main = () => {
                 whileTap={{scale: 0.9}}
                 
                 >
-                    Contactanos
+                    Contacto
                 </motion.h2>
             </Contact>
             <BLOG to="/blog">

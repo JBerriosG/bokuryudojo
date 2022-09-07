@@ -8,7 +8,7 @@ position: relative;
 const Slider = styled.div`
 position: fixed;
 top: 0;
-right: 4rem;
+right: 0;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -20,12 +20,20 @@ transform: rotate(135deg);
 
 }
 
+@media(min-width: 768px){
+    rigth: 4rem;
+}
+
 `
 
 const PreDisplay = styled.div`
 position: absolute;
 top:0;
-right: 4rem;
+right:0;
+
+@media(min-width: 768px){
+    rigth: 4rem;
+}
 `
 
 

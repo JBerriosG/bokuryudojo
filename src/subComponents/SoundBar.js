@@ -7,8 +7,8 @@ const Box = styled.div`
 display:flex;
 cursor:pointer;
 position:fixed;
-left:10rem;
-top:3rem;
+left:5rem;
+top:7rem;
 z-index:10;
 
 &>*:nth-child(1){
@@ -28,6 +28,7 @@ z-index:10;
 }
 
 @media(min-width: 768px){
+    top:3rem;
     left:15rem;
 }
 `

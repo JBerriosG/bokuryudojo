@@ -9,7 +9,7 @@ const Container = styled.div`
 perspective: 700;
 `
 const Box = styled(motion.div)`
-width: 10rem;
+width: 6rem;
 height: 50vh;
 padding: 1.5rem 2rem;
 margin-right: 8rem;

@@ -37,7 +37,7 @@ const Main = styled.div`
   border: 2px solid ${(props) => props.theme.text};
   color: ${(props) => props.theme.text};
   padding: 2rem;
-  width: 70vw;
+  width: 50vw;
   height: 60vh;
   z-index: 3;
   line-height: 1.5;
@@ -47,9 +47,15 @@ const Main = styled.div`
   font-size: calc(0.6rem + 1vw);
   
   position: absolute;
-  left: calc(5rem + 5vw);
+  left: calc(3rem + 3vw);
   top: 10rem;
   font-style: italic;
+
+  @media(min-width: 768px){
+    width: 70vw;
+    height: 60vh;
+    left: calc(5rem + 5vw);
+  }
 `
 // Framer-motion config
 const container = {

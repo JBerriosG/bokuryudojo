@@ -34,15 +34,29 @@ height:400vh;
 position: relative;
 display: flex;
 align-items: center;
+justify-content: center;
 `
 
 const Main = styled(motion.ul)`
 position: fixed;
 top: 12rem;
-left:calc(10rem + 15vw);
 height: 40vh;
 display: flex;
 color:white;
+`
+const Grid = styled.div`
+display: grid;
+grid-template-columns: repeat(1, minmax(calc(10rem + 15vw), 1fr));
+grid-gap: calc(1rem + 2vw);
+
+@media(min-width: 768px){
+    grid-template-columns: repeat(2, minmax(calc(10rem + 15vw), 1fr));
+    grid-gap: calc(1rem + 2vw);
+}
+@media(min-width: 1100px){
+  grid-template-columns: repeat(4, minmax(calc(4rem + 4vw), 1fr));
+  grid-gap: .1rem;
+}
 `
 const Rotate = styled.span`
 display:block;
@@ -81,7 +95,7 @@ const WorkPage = () => {
 
     const rotate = () => {
 
-        element.style.transform = `translateX(${-window.pageYOffset}px)`
+      element.style.transform = `translateY(${-window.pageYOffset}px)`
 
       return (yinyang.current.style.transform =
         'rotate(' + -window.pageYOffset + 'deg)')
@@ -107,11 +121,13 @@ const WorkPage = () => {
             <PowerButton />
 
             <Main ref={ref} variants={container} initial='hidden' animate='show'  >
-              {
-                Work.map(d =>
-                  <Card key={d.id} data={d} />
-                )
-              }
+                <Grid>
+                  {
+                    Work.map(d =>
+                      <Card key={d.id} data={d} />
+                    )
+                  }
+                </Grid>
             </Main>
             <Rotate ref={yinyang}>
               <YinYang width={80} height={80} fill={DarkTheme.text} />

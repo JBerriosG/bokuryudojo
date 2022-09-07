@@ -16,15 +16,17 @@ width: 100vw;
 height:100vh;
 position: relative;
 display: flex;
-justify-content: space-around;
+justify-content: center;
 align-items: center;
 
 `
 const ContainerPrincipal = styled.div`
-height:60vh;
+height:80%;
 width: 80vw;
 display:flex;
-justify-conten: center;
+position:relative;
+top:4.5rem;
+justify-conten: flex-end;
 flex-direction: column;
 
 @media(min-width: 768px){
@@ -37,8 +39,8 @@ border: 2px solid ${props => props.theme.text};
 color: ${props => props.theme.text};
 background-color: ${props => props.theme.body};
 padding: 2rem;
-width: 60vw;
-height: 30vh;
+width: 80%;
+height: 50%;
 z-index:3;
 line-height: 1.5;
 cursor: pointer;

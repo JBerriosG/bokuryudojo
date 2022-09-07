@@ -13,14 +13,15 @@ position: relative;
 
 const Box = styled.div`
 width: 100%;
-height:50vh;
+height:60vh;
 position: relative;
 overflow: hidden;
 display: flex;
 justify-content: center;
+flex-direction: column-reverse;
 div{
     display: flex;
-    width: 50%;
+    width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -29,11 +30,19 @@ div{
 div[id='info']{
     flex-direction: column;
 }
+
+@media(min-width: 768px){
+    height:50%;
+    flex-direction: row;
+    div{
+        width: 50%;
+    }
+}
 `
 const Title = styled.h1`
 color: inherit;
-padding: 0.5rem 0;
-padding-top:1rem;
+//padding: 0.5rem 0;
+//padding-top:1rem;
 
 font-weight:700;
 border-bottom: 1px solid ${props => props.theme.text};
@@ -47,8 +56,8 @@ text-shadow:
 `
 const Description = styled.p`
 color: inherit;
-padding: 0.5rem 0;
-padding-top:1rem;
+//padding: 0.5rem 0;
+//padding-top:1rem;
 
 font-weight:700;
 -webkit-text-stroke: .1px black;
