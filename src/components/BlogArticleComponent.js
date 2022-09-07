@@ -41,8 +41,6 @@ div[id='info']{
 `
 const Title = styled.h1`
 color: inherit;
-//padding: 0.5rem 0;
-//padding-top:1rem;
 
 font-weight:700;
 border-bottom: 1px solid ${props => props.theme.text};
@@ -56,8 +54,6 @@ text-shadow:
 `
 const Description = styled.p`
 color: inherit;
-//padding: 0.5rem 0;
-//padding-top:1rem;
 
 font-weight:700;
 -webkit-text-stroke: .1px black;
@@ -72,7 +68,7 @@ const ImgArticle = styled.div`
 position: relative;
 width: 100%;
 img{
-    width: 25vw;
+    width: 90%;
     height: auto;
     border: 2px solid ${(props) => props.theme.text};
     border-radius:8px;

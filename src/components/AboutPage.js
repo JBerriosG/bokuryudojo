@@ -62,7 +62,6 @@ const Main = styled.div`
   justify-content: center;
   align-items: center;
   font-size: calc(0.7rem + 1vw);
-  backdrop-filter: blur(4px);
   
   position: absolute;
   left: calc(3rem + 3vw);
