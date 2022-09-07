@@ -30,7 +30,7 @@ padding-bottom: 5rem;
 `
 
 const Box = styled.div`
-height:400vh;
+height:auto;
 position: relative;
 display: flex;
 align-items: center;
@@ -38,11 +38,10 @@ justify-content: center;
 `
 
 const Main = styled(motion.ul)`
-position: fixed;
-top: 12rem;
-height: 40vh;
 display: flex;
-color:white;
+justify-content: center;
+align-items: center;
+padding-top: 10rem;
 `
 const Grid = styled.div`
 display: grid;
@@ -55,7 +54,7 @@ grid-gap: calc(1rem + 2vw);
 }
 @media(min-width: 1100px){
   grid-template-columns: repeat(4, minmax(calc(4rem + 4vw), 1fr));
-  grid-gap: .1rem;
+  grid-gap: calc(1rem + 2vw);
 }
 `
 const Rotate = styled.span`
@@ -95,7 +94,7 @@ const WorkPage = () => {
 
     const rotate = () => {
 
-      element.style.transform = `translateY(${-window.pageYOffset}px)`
+      //element.style.transform = `translateY(${-window.pageYOffset}px)`
 
       return (yinyang.current.style.transform =
         'rotate(' + -window.pageYOffset + 'deg)')

@@ -24,6 +24,24 @@ export const Work = [
         name:"Cristopher",
         lastname: "A.",
         description:"Cinturón negro 1° Dan",
+    },
+    {
+        id:5,
+        name:"Jimmy",
+        lastname: "Berríos",
+        description:"Cinturón verde 4° Kyu",
+    },
+    {
+        id:4,
+        name:"Victor",
+        lastname: "Solis",
+        description:"Cinturón verde 4° Kyu",
+    },
+    {
+        id:4,
+        name:"Jesus",
+        lastname: "Berríos",
+        description:"Cinturón verde 7° Kyu",
     }
   
 ] 

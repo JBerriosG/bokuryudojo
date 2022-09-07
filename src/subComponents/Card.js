@@ -9,7 +9,7 @@ const Container = styled.div`
 perspective: 700;
 `
 const Box = styled(motion.div)`
-width: 6rem;
+width: 2rem;
 height: 50vh;
 padding: 1.5rem 2rem;
 margin-right: 8rem;
@@ -73,6 +73,7 @@ const Description = styled.h2`
 font-size: calc(0.8em + 0.3vw);
 font-weight: 500;
 text-align: center;
+padding: 10px;
 -webkit-background-clip: text;
 -moz-background-clip: text;
 background-clip: text;
