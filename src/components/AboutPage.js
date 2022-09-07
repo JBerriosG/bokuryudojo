@@ -6,7 +6,6 @@ import { DarkTheme } from './Themes';
 import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
-import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitlte'
 import dragon from '../assets/Images/solo-dragon.png'
 import img from '../assets/Images/background-nosotros.png'
@@ -98,17 +97,14 @@ const AboutPage = () => {
                         <LogoComponent theme='dark' />
                         <SocialIcons theme='dark' />
                         <PowerButton />
-                        <ParticleComponent theme='dark' />
 
                         <Dragon>
                             <img src={dragon} alt="dragon" />
                         </Dragon>
                         <Main>
-                            I'm a front-end developer located in India. I love to create simple yet beautiful websites with great user experience.
-                            <br /> <br />
-                            I'm interested in the whole frontend stack Like trying new things and building great projects. I'm an independent freelancer and blogger. I love to write blogs and read books.
-                            <br /> <br />
-                            I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
+                            Somos un Dojo que imparte las enseñanzas de un antiguo arte marcial y estilo de vida japones llamado Bujinkan.
+                            <br></br>
+                            Hasta la fecha somos el único Dojo de Bujinkan ubicados en la ciudad de Copiapó, por lo que si quieres ser parte de esta gran y hermosa familia marcial y aprender mas sobre la cultura japonesa, y adquirir habilidades para tu vida y seguridad personal y la de tu familia, ven y entrena con nosotros, te estamos esperando.
                         </Main>
 
                         <BigTitle text="NOSOTROS" top="10%" left="5%" />

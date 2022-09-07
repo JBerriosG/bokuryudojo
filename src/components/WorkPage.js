@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef} from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import { DarkTheme} from './Themes';
 import { motion } from 'framer-motion';
@@ -11,7 +11,7 @@ import { Work } from "../data/WorkData";
 import Card from '../subComponents/Card';
 import { YinYang } from './AllSvgs';
 import BigTitlte from '../subComponents/BigTitlte';
-import img from '../assets/Images/background-members.png'
+import img from '../assets/Images/background-members.png';
 
 const MainContainer = styled(motion.div)`
 background: url(${img});
@@ -75,16 +75,13 @@ const WorkPage = () => {
   const ref = useRef(null);
   const yinyang = useRef(null);
 
-
-
   useEffect(() => {
     let element = ref.current;
 
 
     const rotate = () => {
 
-      element.style.transform = `translateX(${-window.pageYOffset}px)`
-
+        element.style.transform = `translateX(${-window.pageYOffset}px)`
 
       return (yinyang.current.style.transform =
         'rotate(' + -window.pageYOffset + 'deg)')

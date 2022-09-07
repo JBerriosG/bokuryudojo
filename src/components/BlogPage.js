@@ -38,8 +38,12 @@ padding-top: 10rem;
 
 const Grid = styled.div`
 display: grid;
-grid-template-columns: repeat(2, minmax(calc(10rem + 15vw), 1fr));
+grid-template-columns: repeat(1, minmax(calc(10rem + 15vw), 1fr));
 grid-gap: calc(1rem + 2vw);
+
+@media(min-width: 768px){
+    grid-template-columns: repeat(2, minmax(calc(10rem + 15vw), 1fr));
+}
 `
 
 // Framer-motion config
@@ -87,13 +91,13 @@ const BlogPage = () => {
 
                             {
                                 Blogs.map(blog => {
-                                    return <BlogComponent key={blog.id} blog={blog} />
+                                    return <BlogComponent key={blog.id} blog={blog}/>
                                 })
+                                
                             }
                         </Grid>
-
                     </Center>
-                    <BigTitle text="NOTICIAS" top="5rem" left="5rem" />
+                    <BigTitle text="ARTICULOS" top="5rem" left="5rem" />
                 </Container>
             </ThemeProvider>
         </MainContainer>

@@ -10,6 +10,7 @@ import AboutPage from './components/AboutPage';
 import BlogPage from './components/BlogPage';
 import WorkPage from './components/WorkPage';
 import MySkillsPage from './components/MySkillsPage';
+import BlogArticle from "./components/BlogArticle";
 import { AnimatePresence } from "framer-motion";
 import SoundBar from "./subComponents/SoundBar";
 
@@ -34,7 +35,12 @@ function App() {
           <Route exact path="/blog" component={BlogPage} />
           <Route exact path="/work" component={WorkPage} />
           <Route exact path="/skills" component={MySkillsPage} />
-
+          <Route exact path="/article" render={() => {
+            return <BlogArticle id="0" />
+          }} />
+          <Route path="/article/:id" render={({ match }) => {
+            return <BlogArticle id={match.params.id} />
+          }} />
         </Switch>
       </AnimatePresence>
 

@@ -47,6 +47,7 @@ const Title = styled.h3`
 color: inherit;
 padding: 0.5rem 0;
 padding-top:1rem;
+
 font-weight:700;
 border-bottom: 1px solid ${props => props.theme.text};
 
@@ -56,14 +57,19 @@ ${Box}:hover &{
     
 }
 `
-const HashTags = styled.div`
+const Description = styled.p`
+color: inherit;
 padding: 0.5rem 0;
-`
-const Tag = styled.span`
-padding-right: 0.5rem;
-`
-const Date = styled.span`
-padding:0.5rem 0
+padding-top:1rem;
+
+font-weight:700;
+border-bottom: 1px solid ${props => props.theme.text};
+
+${Box}:hover &{
+    border-bottom: 1px solid ${props => props.theme.body};
+
+    
+}
 `
 
 const Container = styled(motion.div)``;
@@ -83,26 +89,17 @@ const Item = {
 }
 
 const BlogComponent = (props) => {
-    const { name, tags, date, imgSrc, link } = props.blog;
+    const { name, description, imgSrc, id } = props.blog;
     return (
         <Container
             variants={Item}
 
         >
-            <Box target="_blank" to={{ pathname: link }}
+            <Box target="_blank" to={{ pathname: "/article/"+id }}
             >
                 <Image img={imgSrc} />
                 <Title>{name}</Title>
-                <HashTags>
-                    {
-                        tags.map((t, id) => {
-                            return <Tag key={id}>#{t}</Tag>
-                        })
-                    }
-                </HashTags>
-                <Date>
-                    {date}
-                </Date>
+                <Description>{description}</Description>
             </Box>
         </Container>
     )

@@ -7,7 +7,7 @@ const Box = styled.div`
 display:flex;
 cursor:pointer;
 position:fixed;
-left:15rem;
+left:10rem;
 top:3rem;
 z-index:10;
 
@@ -25,6 +25,10 @@ z-index:10;
 }
 &>*:nth-child(5){
     animation-delay: 0.8s;
+}
+
+@media(min-width: 768px){
+    left:15rem;
 }
 `
 
@@ -66,6 +70,7 @@ const SoundBar = () => {
     }
     return (
         <Box onClick={() => handleClick()}>
+
             <Line click={click}/>
             <Line click={click}/>
             <Line click={click}/>
