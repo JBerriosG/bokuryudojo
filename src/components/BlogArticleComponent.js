@@ -44,25 +44,30 @@ color: inherit;
 
 font-weight:700;
 border-bottom: 1px solid ${props => props.theme.text};
--webkit-text-stroke: 1px black;
-text-shadow:
+
+@media(min-width: 768px){
+    -webkit-text-stroke: 1px black;
+    text-shadow:
        3px 3px 0 #000,
      -1px -1px 0 #000,  
       1px -1px 0 #000,
       -1px 1px 0 #000,
        1px 1px 0 #000;
+}
 `
 const Description = styled.p`
 color: inherit;
 
 font-weight:700;
--webkit-text-stroke: .1px black;
-text-shadow:
+@media(min-width: 768px){
+    -webkit-text-stroke: .1px black;
+    text-shadow:
        3px 3px 0 #000,
      -1px -1px 0 #000,  
       1px -1px 0 #000,
       -1px 1px 0 #000,
        1px 1px 0 #000;
+}
 `
 const ImgArticle = styled.div`
 position: relative;
