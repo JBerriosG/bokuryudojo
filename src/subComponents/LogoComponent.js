@@ -8,7 +8,7 @@ import { LogoDojo } from '../components/AllSvgs'
 
 const Logo = styled.h1`
 display: inline-block;
-color: ${props => props.color === 'dark' ? DarkTheme.text : DarkTheme.body};
+color: ${props => props.color === "dark" ? DarkTheme.text : DarkTheme.body};
 font-family: 'Pacifico',cursive;
 
 position: absolute;

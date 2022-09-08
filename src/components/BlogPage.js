@@ -10,7 +10,7 @@ import BlogComponent from './BlogComponent'
 import AnchorComponent from '../subComponents/Anchor'
 import BigTitle from "../subComponents/BigTitlte"
 import { motion } from 'framer-motion'
-import { DarkTheme} from './Themes';
+import { DarkTheme } from './Themes';
 
 
 const MainContainer = styled(motion.div)`
@@ -80,26 +80,26 @@ const BlogPage = () => {
                 opacity: 0, transition: { duration: 0.5 }
             }}
         >
-            <ThemeProvider theme={DarkTheme}>
-                <Container>
-                    <LogoComponent theme="dark"/>
+            <Container>
+                <ThemeProvider theme={DarkTheme}>
+                    <LogoComponent theme="dark" />
                     <PowerButton />
-                    <SocialIcons theme="dark"/>
+                    <SocialIcons theme="dark" />
                     <AnchorComponent number={numbers} />
                     <Center>
                         <Grid>
 
                             {
                                 Blogs.map(blog => {
-                                    return <BlogComponent key={blog.id} blog={blog}/>
+                                    return <BlogComponent key={blog.id} blog={blog} />
                                 })
-                                
+
                             }
                         </Grid>
                     </Center>
                     <BigTitle text="ARTICULOS" top="5rem" left="5rem" />
-                </Container>
-            </ThemeProvider>
+                </ThemeProvider>
+            </Container>
         </MainContainer>
     )
 }

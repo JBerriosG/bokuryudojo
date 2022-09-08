@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import React from 'react'
-import styled, { keyframes, ThemeProvider } from 'styled-components'
+import styled, {ThemeProvider } from 'styled-components'
 import img from '../assets/Images/background-noticias.png'
 import BigTitlte from '../subComponents/BigTitlte'
 import LogoComponent from '../subComponents/LogoComponent'
@@ -96,6 +96,7 @@ const BlogArticle = (props) => {
                                     if(blog.id === parseInt(id)){
                                         return <BlogArticleComponent key={blog.id} blog={blog}/>
                                     }
+                                    return null
                                 })
                             }
                             <h1>{}</h1>

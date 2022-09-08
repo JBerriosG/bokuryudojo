@@ -89,7 +89,7 @@ const Item = {
 }
 
 const BlogComponent = (props) => {
-    const { name, description, imgSrc, id } = props.blog;
+    const { name, review, imgSrc, id } = props.blog;
     return (
         <Container
             variants={Item}
@@ -99,7 +99,7 @@ const BlogComponent = (props) => {
             >
                 <Image img={imgSrc} />
                 <Title>{name}</Title>
-                <Description>{description}</Description>
+                <Description>{review}</Description>
             </Box>
         </Container>
     )

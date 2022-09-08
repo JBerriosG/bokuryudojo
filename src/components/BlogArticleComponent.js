@@ -34,8 +34,9 @@ div[id='info']{
 @media(min-width: 768px){
     height:50%;
     flex-direction: row;
+    align-items: center;
     div{
-        width: 50%;
+        width: 60%;
     }
 }
 `
@@ -80,7 +81,7 @@ img{
 }
 @media (min-width: 768px) {
     img{
-        width: 20vw;
+        width: 100%;
     }
 }
 `
@@ -117,7 +118,7 @@ const BlogArticleComponent = (props) => {
                         <Title>{name}</Title>
                         <Description>{description}</Description>
                     </div>
-                    <div>
+                    <div id='img'>
                         <ImgArticle><img src={imgSrc}></img></ImgArticle>
                     </div>
 

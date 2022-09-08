@@ -89,7 +89,6 @@ const WorkPage = () => {
   const yinyang = useRef(null);
 
   useEffect(() => {
-    let element = ref.current;
 
 
     const rotate = () => {

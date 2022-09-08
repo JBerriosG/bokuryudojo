@@ -87,7 +87,7 @@ const Intro = () => {
                 <Text>
                     <h1>Hola,</h1>
                     <h3>Somos Bokuryu Dojo.</h3>
-                    <h6>Bienvenidos a nuestro website, conocenos y ven a entrenar con nostros.</h6>
+                    <h6>Bienvenidos a nuestro Sitio Web, conocenos y ven a entrenar con nostros.</h6>
                 </Text>
             </SubBox>
             <SubBox>
