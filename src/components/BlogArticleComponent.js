@@ -119,7 +119,7 @@ const BlogArticleComponent = (props) => {
                         <Description>{description}</Description>
                     </div>
                     <div id='img'>
-                        <ImgArticle><img src={imgSrc}></img></ImgArticle>
+                        <ImgArticle><img src={imgSrc} alt={name}></img></ImgArticle>
                     </div>
 
                 </Box>

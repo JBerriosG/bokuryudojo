@@ -97,7 +97,7 @@ const BlogComponent = (props) => {
             variants={Item}
 
         >
-            <Box target="_blank" to={{ pathname: "/article/"+id }}
+            <Box target="_self" to={{ pathname: "/article/"+id }}
             >
                 <Image img={imgSrc} />
                 <Title>{name}</Title>
