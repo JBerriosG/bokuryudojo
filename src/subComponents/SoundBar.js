@@ -79,7 +79,7 @@ const SoundBar = () => {
             <Line click={click}/>
 
 
-            <audio src={music} ref={ref}  loop />
+            <audio src="https://bokuryudojobucket.s3.sa-east-1.amazonaws.com/hokkai-minyo-cho.mp3" ref={ref}  loop />
         </Box>
     )
 }
