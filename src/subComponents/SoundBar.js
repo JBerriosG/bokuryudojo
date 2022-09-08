@@ -6,7 +6,7 @@ import music from "../assets/audio/hokkai-minyo-cho.mp3"
 const Box = styled.div`
 display:flex;
 cursor:pointer;
-position:fixed;
+position:absolute;
 left:5rem;
 top:7rem;
 z-index:10;

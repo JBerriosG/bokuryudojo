@@ -11,7 +11,7 @@ display: inline-block;
 color: ${props => props.color === 'dark' ? DarkTheme.text : DarkTheme.body};
 font-family: 'Pacifico',cursive;
 
-position: fixed;
+position: absolute;
 left: 0rem;
 top: 0rem;
 z-index:3;

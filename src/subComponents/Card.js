@@ -40,6 +40,7 @@ transform-style: preserve-3d;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .back{
@@ -56,7 +57,7 @@ transform-style: preserve-3d;
 }
 `
 const Title = styled.h2`
-font-size: calc(0.8em + 0.5vw);
+font-size: calc(1.2rem + 0.5vw);
 width: 10px;
 word-wrap: break-word;
 text-align: center;
@@ -67,10 +68,14 @@ padding: 10px;
 background-clip: text;
 color: transparent;
 text-shadow: 0px 3px 3px rgba(255,255,255,0.5),0px -1px 1px rgba(0,0,0,1);
+
+@media(min-width: 768px){
+    font-size: calc(0.8em + 0.5vw);
+}
 `
 
 const Description = styled.h2`
-font-size: calc(0.8em + 0.3vw);
+font-size: calc(1.2rem + 0.3vw);
 font-weight: 500;
 text-align: center;
 padding: 10px;
@@ -79,6 +84,9 @@ padding: 10px;
 background-clip: text;
 color: transparent;
 text-shadow: 0px 3px 3px rgba(255,255,255,0.5),0px -1px 1px rgba(0,0,0,1);
+@media(min-width: 768px){
+    font-size: calc(0.8em + 0.5vw);
+}
 `
 
 
