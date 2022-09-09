@@ -1,8 +1,6 @@
 import React, { useRef, useState } from 'react'
 import styled, { keyframes } from 'styled-components'
 
-import music from "../assets/audio/hokkai-minyo-cho.ogg"
-
 const Box = styled.div`
 display:flex;
 cursor:pointer;
