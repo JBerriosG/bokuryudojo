@@ -109,6 +109,7 @@ const AboutPage = () => {
                             Somos un Dojo que imparte las enseñanzas de un antiguo arte marcial y estilo de vida japones llamado Bujinkan.
                             <br></br>
                             Hasta la fecha somos el único Dojo de Bujinkan ubicados en la ciudad de Copiapó, por lo que si quieres ser parte de esta gran y hermosa familia marcial y aprender mas sobre la cultura japonesa, y adquirir habilidades para tu vida y seguridad personal y la de tu familia, ven y entrena con nosotros, te estamos esperando.
+                            Puedes encontrarnos en Pje. Oriente 5 de 6-38, Copiapó, Atacama.
                         </Main>
 
                         <BigTitle text="NOSOTROS" top="10%" left="5%" />
