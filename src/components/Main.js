@@ -11,7 +11,7 @@ import Intro from './Intro'
 
 
 const MainContainer = styled.div`
-background: ${props => props.theme.body};
+background: #a0a0a1;
 width: 100vw;
 height: 100vh;
 overflow:hidden;
