@@ -91,13 +91,13 @@ const Item = {
 }
 
 const BlogComponent = (props) => {
-    const { name, review, imgSrc, id } = props.blog;
+    const { name, review, imgSrc, id, type } = props.blog;
     return (
         <Container
             variants={Item}
 
         >
-            <Box target="_self" to={{ pathname: "/article/"+id }}
+            <Box target="_self" to={{ pathname: "/article/"+type+"/"+id }}
             >
                 <Image img={imgSrc} />
                 <Title>{name}</Title>

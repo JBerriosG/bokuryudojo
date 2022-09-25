@@ -9,6 +9,7 @@ import SocialIcons from '../subComponents/SocialIcons'
 import { DarkTheme } from './Themes'
 import { Blogs } from '../data/BlogData'
 import BlogArticleComponent from './BlogArticleComponent'
+import BlogArticleVideoComponent from './BlogArticleVideoComponent'
 
 const MainContainer = styled(motion.div)`
 background: url(${img});
@@ -53,7 +54,7 @@ const Main = styled.div`
 
   @media(min-width: 768px){
     width: 70vw;
-    height: 60vh;
+    height: auto;
     left: calc(5rem + 5vw);
   }
 `
@@ -94,7 +95,11 @@ const BlogArticle = (props) => {
                             {
                                 Blogs.map(blog => {
                                     if(blog.id === parseInt(id)){
-                                        return <BlogArticleComponent key={blog.id} blog={blog}/>
+                                        if (blog.type === "img"){
+                                            return <BlogArticleComponent key={blog.id} blog={blog}/>
+                                        }else{
+                                            return <BlogArticleVideoComponent key={blog.id} blog={blog}/>
+                                        }
                                     }
                                     return null
                                 })

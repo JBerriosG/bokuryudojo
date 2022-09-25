@@ -13,7 +13,7 @@ position: relative;
 
 const Box = styled.div`
 width: 100%;
-height:60vh;
+height:auto;
 position: relative;
 overflow: hidden;
 display: flex;
@@ -22,7 +22,7 @@ flex-direction: column-reverse;
 div{
     display: flex;
     width: 100%;
-    height: 100%;
+    height: auto;
     justify-content: center;
     align-items: center;
     text-align: justify;
@@ -32,7 +32,7 @@ div[id='info']{
 }
 
 @media(min-width: 768px){
-    height:50%;
+    height:auto;
     flex-direction: row;
     align-items: center;
     div{
@@ -70,18 +70,17 @@ font-weight:700;
        1px 1px 0 #000;
 }
 `
-const ImgArticle = styled.div`
+const VideoArticle = styled.div`
 position: relative;
 width: 100%;
-img{
-    width: 90%;
-    height: auto;
+video{
+    width: 60%;
     border: 2px solid ${(props) => props.theme.text};
     border-radius:8px;
 }
 @media (min-width: 768px) {
-    img{
-        width: 100%;
+    video{
+        width: 80%;
     }
 }
 `
@@ -100,9 +99,9 @@ const container = {
 
 }
 
-const BlogArticleComponent = (props) => {
+const BlogArticleVideoComponent = (props) => {
 
-    const { name, description, imgSrc} = props.blog;
+    const { name, description, videoSrc} = props.blog;
     return (
         <MainContainer
             variants={container}
@@ -118,8 +117,12 @@ const BlogArticleComponent = (props) => {
                         <Title>{name}</Title>
                         <Description>{description}</Description>
                     </div>
-                    <div id='img'>
-                        <ImgArticle><img src={imgSrc} alt={name}></img></ImgArticle>
+                    <div id='video'>
+                        <VideoArticle>
+                            <video controls autoPlay>
+                                <source src={videoSrc} type='video/mp4'></source>
+                            </video>
+                        </VideoArticle>
                     </div>
 
                 </Box>
@@ -129,4 +132,4 @@ const BlogArticleComponent = (props) => {
 
 }
 
-export default BlogArticleComponent
+export default BlogArticleVideoComponent

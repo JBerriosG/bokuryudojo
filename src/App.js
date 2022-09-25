@@ -38,8 +38,8 @@ function App() {
           <Route exact path="/article" render={() => {
             return <BlogArticle id="0" />
           }} />
-          <Route path="/article/:id" render={({ match }) => {
-            return <BlogArticle id={match.params.id} />
+          <Route path="/article/:type/:id" render={({ match }) => {
+            return <BlogArticle id={match.params.id} type={match.params.type}/>
           }} />
         </Switch>
       </AnimatePresence>
