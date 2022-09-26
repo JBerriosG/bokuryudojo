@@ -21,15 +21,19 @@ background-position: center;
 const ContainerPrincipal = styled.div`
 background-color: rgba(30, 30, 30, 0.8);
 width: 100%;
-height:auto;
+height: 110vh;
 
 position: relative;
 padding-bottom: 5rem;
+
+@media(min-width: 768px){
+    height:99vh;
+}
 `
 
 const Box = styled.div`
 width: 100vw;
-height:100vh;
+height: 100%;
 position: relative;
 overflow: hidden;
 `
@@ -39,7 +43,7 @@ const Main = styled.div`
   color: ${(props) => props.theme.text};
   padding: 2rem;
   width: 50vw;
-  height: 60vh;
+  height: auto;
   z-index: 3;
   line-height: 1.5;
   display: flex;

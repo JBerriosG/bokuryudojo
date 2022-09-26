@@ -45,6 +45,7 @@ top: 10%;
 right: 5%;
 width: 20vw;
 animation: ${float} 4s ease infinite;
+z-index:1;
 img{
     width: 100%;
     height: auto;

@@ -56,7 +56,7 @@ display: flex;
 `
 
 const Text = styled.div`
-font-size: calc(1em + 1.5vw);
+font-size: calc(.8rem + 1.5vw);
 color: ${props => props.theme.body};
 padding: 2rem;
 cursor: pointer;
@@ -72,8 +72,9 @@ justify-content: space-evenly;
 
 }
 
-
-
+@media(min-width: 768px){
+    font-size: calc(1em + 1.5vw);
+}
 `
 
 const Intro = () => {

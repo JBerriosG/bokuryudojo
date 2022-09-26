@@ -43,7 +43,7 @@ const BLOG = styled(NavLink)`
 color: ${props => props.theme.text};
 position: absolute;
 top: 50%;
-right: calc(1rem + 2vw);
+right: calc(.1rem + 1vw);
 transform: rotate(90deg) translate(-50%, -50%);
 text-decoration: none;
 z-index:1;

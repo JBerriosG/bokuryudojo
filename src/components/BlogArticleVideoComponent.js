@@ -18,7 +18,7 @@ position: relative;
 overflow: hidden;
 display: flex;
 justify-content: center;
-flex-direction: column-reverse;
+flex-direction: column;
 div{
     display: flex;
     width: 100%;
@@ -58,7 +58,7 @@ border-bottom: 1px solid ${props => props.theme.text};
 `
 const Description = styled.p`
 color: inherit;
-
+margin-bottom: .4rem;
 font-weight:700;
 @media(min-width: 768px){
     -webkit-text-stroke: .1px black;
@@ -74,7 +74,7 @@ const VideoArticle = styled.div`
 position: relative;
 width: 100%;
 video{
-    width: 60%;
+    width: 80%;
     border: 2px solid ${(props) => props.theme.text};
     border-radius:8px;
 }

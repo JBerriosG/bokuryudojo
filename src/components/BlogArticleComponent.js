@@ -13,7 +13,7 @@ position: relative;
 
 const Box = styled.div`
 width: 100%;
-height:60vh;
+height: 80vh;
 position: relative;
 overflow: hidden;
 display: flex;
