@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import styled from 'styled-components'
-import { Dragon, Link } from '../components/AllSvgs'
+import { Kunai, Link } from '../components/AllSvgs'
 
 const Container = styled.div`
 position: relative;
@@ -77,7 +77,7 @@ const AnchorComponent = (props) => {
         <Container>
             <PreDisplay ref={hiddenRef} className='hidden'>
 
-                <Dragon width={110} height={110} fill='currentColor' />
+                <Kunai width={110} height={110} fill='currentColor' />
             </PreDisplay>
             <Slider ref={ref}>
                 {
@@ -85,7 +85,7 @@ const AnchorComponent = (props) => {
                         return <Link key={id} width={25} height={25} fill='currentColor' className="chain" />
                     })
                 }
-                <Dragon width={110} height={110} fill='currentColor' />
+                <Kunai width={110} height={110} fill='currentColor' />
             </Slider>
         </Container>
     )
