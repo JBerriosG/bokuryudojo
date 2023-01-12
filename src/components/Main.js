@@ -27,7 +27,7 @@ font-size: 20rem;
 color:#ffffff;
 font-family: 'Roboto';
 `
-const WsDown = styled.h3`
+const WsDown = styled.h2`
 color:#ffffff;
 font-family: 'Roboto';
 `
