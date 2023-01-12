@@ -29,6 +29,7 @@ background-color: black;
     padding: 30px;
     color: white;
     content: attr(data-text);
+    white-space: pre;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -184,10 +185,7 @@ const Main = () => {
     return (
         <Container>
             <div className='content'>
-                <div data-text='404' className='text'>404</div>
-            </div>
-            <div className='content'>
-                <div data-text='Web Site Down' className='text'>Web Site Down</div>
+                <div data-text='404 Web_Site_Down' className='text'>404 Web_Site_Down</div>
             </div>
         </Container>
     )
