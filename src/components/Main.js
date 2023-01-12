@@ -22,6 +22,13 @@ display:grid;
 place-content: center;
 text-align:center;
 
+.text{
+    position: relative;
+    font-size: 20rem;
+    color:#fff;
+    font-family: 'Roboto';
+}
+
 .text::before, .text::after{
     position: absolute;
     content: attr(data-text);
@@ -34,13 +41,6 @@ text-align:center;
     overflow: hidden;
 }
 `
-
-const Error = styled.div`
-position: relative;
-font-size: 20rem;
-color:#ffffff;
-font-family: 'Roboto';
-`
 const WsDown = styled.h2`
 color:#ffffff;
 font-family: 'Roboto';
@@ -52,7 +52,7 @@ const Main = () => {
     return (
         <MainContainer>
             <Container>
-                <Error data-text='404' className='text'>404</Error>
+                <div data-text='404' className='text'>404</div>
                 <WsDown>WebSite Down</WsDown>
             </Container>
         </MainContainer>
