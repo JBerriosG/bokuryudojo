@@ -21,15 +21,8 @@ padding: 2rem;
 display:grid;
 place-content: center;
 text-align:center;
-`
 
-const Error = styled.div`
-position: relative;
-font-size: 20rem;
-color:#ffffff;
-font-family: 'Roboto';
-
-&>::before{
+.text::before{
     position: absolute;
     content: attr(data-text);
     padding: 30px;
@@ -39,6 +32,13 @@ font-family: 'Roboto';
     left: 0;
     color: #fff;
 }
+`
+
+const Error = styled.div`
+position: relative;
+font-size: 20rem;
+color:#ffffff;
+font-family: 'Roboto';
 `
 const WsDown = styled.h2`
 color:#ffffff;
@@ -51,7 +51,7 @@ const Main = () => {
     return (
         <MainContainer>
             <Container>
-                <Error data-text="404">404</Error>
+                <Error data-text='404' className='text'>404</Error>
                 <WsDown>WebSite Down</WsDown>
             </Container>
         </MainContainer>
