@@ -23,7 +23,7 @@ place-content: center;
 text-align:center;
 `
 
-const Error = styled.h1`
+const Error = styled.div`
 position: relative;
 font-size: 20rem;
 color:#ffffff;
