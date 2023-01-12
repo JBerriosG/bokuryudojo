@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
 width: 100%;
-height: 100%;
+height: 100vh;
 overflow: hidden;
 background-color: black;
 
@@ -18,7 +18,7 @@ background-color: black;
     position: relative;
     color: #fff;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 20rem;
     transform: scale(2);
     padding: 30px;
     letter-spacing: 2px;
