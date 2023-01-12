@@ -37,11 +37,6 @@ text-align:center;
     overflow: hidden;
 }
 `
-const WsDown = styled.h2`
-color:#ffffff;
-font-family: 'Roboto';
-`
-
 
 const Main = () => {
 
