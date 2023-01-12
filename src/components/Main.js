@@ -1,23 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
-;
+    ;
 
-
-const MainContainer = styled.div`
-background: #000000;
-width: 100vw;
-height: 100vh;
-position: relative;
-h2,h3,h4,h5,h6{
-  font-weight:500;
-}
-`
 
 const Container = styled.div`
-padding: 2rem;
-display:grid;
-place-content: center;
-text-align:center;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
 
 .text{
     position: relative;
@@ -183,11 +181,9 @@ text-align:center;
 const Main = () => {
 
     return (
-        <MainContainer>
-            <Container>
-                <div data-text='404' className='text'>404</div>
-            </Container>
-        </MainContainer>
+        <Container>
+            <div data-text='404' className='text'>404</div>
+        </Container>
     )
 }
 
