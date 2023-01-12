@@ -185,7 +185,8 @@ const Main = () => {
         <Container>
             <div className='content'>
                 <div data-text='404' className='text'>404</div>
-                <br></br>
+            </div>
+            <div className='content'>
                 <div data-text='Web Site Down' className='text'>Web Site Down</div>
             </div>
         </Container>
