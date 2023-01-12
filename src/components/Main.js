@@ -18,7 +18,7 @@ background-color: black;
     position: relative;
     color: #fff;
     font-weight: 700;
-    font-size: 6rem;
+    font-size: 5rem;
     transform: scale(2);
     padding: 30px;
     letter-spacing: 2px;
