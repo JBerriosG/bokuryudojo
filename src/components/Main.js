@@ -139,16 +139,16 @@ const Main = () => {
         <MainContainer>
          <DarkDiv   click={click}/>
             <Container>
-            <PowerButton />
+            {/* <PowerButton />
             <LogoComponent theme={click ? 'dark' :'light'}/>
             <SocialIcons theme={click ? 'dark' :'light'} />
            
             <Center click={click}>
                 <YinYang  onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' />
                 <span>Haz click aquí!</span>
-            </Center>
+            </Center> */}
 
-            <Contact target="_blank" to={{pathname:"https://wa.me/+56975217320"}}>
+            {/* <Contact target="_blank" to={{pathname:"https://wa.me/+56975217320"}}>
                 <motion.h2
                 initial={{
                     y:-200,
@@ -164,8 +164,8 @@ const Main = () => {
                 >
                     Contacto
                 </motion.h2>
-            </Contact>
-            <BLOG to="/blog">
+            </Contact> */}
+            {/* <BLOG to="/blog">
                 <motion.h2
                 initial={{
                     y:-200,
@@ -180,8 +180,8 @@ const Main = () => {
                 >
                     Artículos
                 </motion.h2>
-            </BLOG>
-            <WORK to="/work" click={+click}>
+            </BLOG> */}
+            {/* <WORK to="/work" click={+click}>
                 <motion.h2
                 initial={{
                     y:-200,
@@ -196,9 +196,9 @@ const Main = () => {
                 >
                     Miembros
                 </motion.h2>
-            </WORK>
+            </WORK> */}
             <BottomBar>
-            <ABOUT to="/about" click={+click}>
+            {/* <ABOUT to="/about" click={+click}>
                 <motion.h2
                 initial={{
                     y:200,
@@ -213,8 +213,8 @@ const Main = () => {
                 >
                     Nosotros
                 </motion.h2>
-            </ABOUT>
-            <SKILLS to="/skills">
+            </ABOUT> */}
+            {/* <SKILLS to="/skills">
                 <motion.h2
                 initial={{
                     y:200,
@@ -229,7 +229,7 @@ const Main = () => {
                 >
                     Historia
                 </motion.h2>
-            </SKILLS>
+            </SKILLS> */}
 
             </BottomBar>
 
