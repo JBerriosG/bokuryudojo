@@ -20,6 +20,7 @@ const Container = styled.div`
 padding: 2rem;
 display:grid;
 place-content: center;
+text-align:center;
 `
 
 const Error = styled.h1`
