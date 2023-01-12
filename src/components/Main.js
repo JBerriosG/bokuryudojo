@@ -4,39 +4,48 @@ import styled from 'styled-components'
 const Container = styled.div`
 width: 100%;
 height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-background: black;
+overflow: hidden;
+background-color: black;
 
-.text{
-    position: relative;
-    font-size: 20rem;
-    color:#fff;
-    font-family: 'Roboto';
-}
-
-.text:before, .text:after{
-    position: absolute;
-    content: attr(data-text);
-    padding: 30px;
+.content{
     width: 100%;
     height: 100%;
-    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content .text{
+    position: relative;
     color: #fff;
+    font-weight: 700;
+    font-size: 45px;
+    transform: scale(2);
+    padding: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .content .text:before,
+  .content .text:after {
+    padding: 30px;
+    color: white;
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
     overflow: hidden;
-}
-
-.text:before{
+    top: 0;
+  }
+  .content .text:before{
     left: 3px;
-    text-shadows:-2px 0 red;
-    animation: glitch-1 2s 0s linear reverse infinite;
-}
-.text:after{
+    text-shadow: -2px 0 red;
+    animation: glitch-1 2s linear infinite reverse;
+  }
+  .content .text:after{
     left: -3px;
-    text-shadows:-2px 0 blue;
-    animation: glitch-2 2s 0s linear reverse infinite;
-}
+    text-shadow: -2px 0 blue;
+    animation: glitch-2 2s linear infinite reverse;
+  }
 
 @keyframes glitch-1 {
     0% {
@@ -174,7 +183,9 @@ const Main = () => {
 
     return (
         <Container>
-            <div data-text='404' className='text'>404</div>
+            <div className='content'>
+                <div data-text='404' className='text'>404</div>
+            </div>
         </Container>
     )
 }
