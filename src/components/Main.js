@@ -19,24 +19,12 @@ h2,h3,h4,h5,h6{
 const Container = styled.div`
 padding: 2rem;
 `
-const DarkDiv = styled.div`
-position: absolute;
-top: 0;
-background-color: rgba(0, 0, 0, 0.89);
-bottom: 0;
-right: 50%;
-width: 100%;
-height: 100%;
-z-index:1;
-transition: height 0.5s ease, width 1s ease 0.5s;
-`
 
 
 const Main = () => {
 
     return (
         <MainContainer>
-         <DarkDiv/>
             <Container>
             </Container>
         </MainContainer>
