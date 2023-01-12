@@ -27,6 +27,10 @@ font-size: 20rem;
 color:#ffffff;
 font-family: 'Roboto';
 `
+const WsDown = styled.h3`
+color:#ffffff;
+font-family: 'Roboto';
+`
 
 
 const Main = () => {
@@ -35,7 +39,7 @@ const Main = () => {
         <MainContainer>
             <Container>
                 <Error>404</Error>
-                <Error>WebSite Down</Error>
+                <WsDown>WebSite Down</WsDown>
             </Container>
         </MainContainer>
     )
