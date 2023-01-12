@@ -29,7 +29,7 @@ text-align:center;
     font-family: 'Roboto';
 }
 
-.text::before, .text::after{
+.text:before, .text:after{
     position: absolute;
     content: attr(data-text);
     padding: 30px;
