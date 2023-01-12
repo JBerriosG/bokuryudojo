@@ -1,7 +1,6 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import Intro from './Intro'
 ;
 
 
@@ -39,8 +38,8 @@ top: 0;
 background-color: rgba(0, 0, 0, 0.89);
 bottom: 0;
 right: 50%;
-width: ${props => props.click ? '50%' : '0%'};
-height: ${props => props.click ? '100%' : '0%'};
+width: 100%;
+height: 100%;
 z-index:1;
 transition: height 0.5s ease, width 1s ease 0.5s;
 `
@@ -50,7 +49,7 @@ const Main = () => {
 
     return (
         <MainContainer>
-         <DarkDiv   click={click}/>
+         <DarkDiv/>
             <Container>
             {/* <PowerButton />
             <LogoComponent theme={click ? 'dark' :'light'}/>
@@ -147,7 +146,6 @@ const Main = () => {
             </BottomBar>
 
             </Container>
-            {click ? <Intro click={click} /> : null }
         </MainContainer>
     )
 }
