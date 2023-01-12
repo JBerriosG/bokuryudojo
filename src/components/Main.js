@@ -48,7 +48,7 @@ const Main = () => {
     return (
         <MainContainer>
             <Container>
-                <div data-text='404' className='text'>404</div>
+                <div data-text='404' className='text'></div>
                 <WsDown>WebSite Down</WsDown>
             </Container>
         </MainContainer>
