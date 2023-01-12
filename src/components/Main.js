@@ -22,7 +22,7 @@ display:grid;
 place-content: center;
 text-align:center;
 
-.text::before{
+.text::before, .text::after{
     position: absolute;
     content: attr(data-text);
     padding: 30px;
@@ -31,6 +31,7 @@ text-align:center;
     top: 0;
     left: 0;
     color: #fff;
+    overflow: hidden;
 }
 `
 
