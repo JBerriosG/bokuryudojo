@@ -38,7 +38,6 @@ font-family: 'Roboto';
     top: 0;
     left: 0;
     color: #fff;
-    overflow: hidden;
 }
 `
 const WsDown = styled.h2`
