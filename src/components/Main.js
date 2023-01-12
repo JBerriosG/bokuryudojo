@@ -1,7 +1,6 @@
 
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import styled, { keyframes } from 'styled-components'
+import React from 'react'
+import styled from 'styled-components'
 import Intro from './Intro'
 ;
 
@@ -23,38 +22,6 @@ const Container = styled.div`
 padding: 2rem;
 `
 
-const Contact = styled(NavLink)`
-color: ${props => props.theme.text};
-position: absolute;
-top: 2rem;
-right: calc(2rem + 2vw);
-text-decoration: none;
-z-index:1;
-
-@media(min-width: 768px){
-    right: calc(2rem + 2vw);
-}
-`
-const BLOG = styled(NavLink)`
-color: ${props => props.theme.text};
-position: absolute;
-top: 50%;
-right: calc(.1rem + 1vw);
-transform: rotate(90deg) translate(-50%, -50%);
-text-decoration: none;
-z-index:1;
-`
-const WORK = styled(NavLink)`
-color: ${props => props.click ? props.theme.body : props.theme.text};
-
-position: absolute;
-top: 45%;
-left: calc(1rem + 2vw);
-transform: translate(-50%, -50%) rotate(-90deg) ;
-text-decoration: none;
-z-index:1;
-`
-
 const BottomBar = styled.div`
 position: absolute;
 bottom: 1rem;
@@ -64,52 +31,6 @@ width: 100%;
 
 display: flex;
 justify-content: space-evenly;
-`
-
-const ABOUT = styled(NavLink)`
-color: ${props => props.click ? props.theme.body : props.theme.text};
-text-decoration: none;
-z-index:1;
-`
-const SKILLS = styled(NavLink)`
-color: ${props => props.theme.text};
-text-decoration: none;
-z-index:1;
-`
-
-const rotate = keyframes`
-from{
-    transform: rotate(0);
-}
-to{
-    transform: rotate(360deg);
-}
-`
-
-const Center = styled.button`
-position: absolute;
-top: ${props => props.click ? '85%' :'50%'  };
-left: ${props => props.click ? '92%' :'50%'  };
-transform: translate(-50%,-50%);
-border: none;
-outline: none;
-background-color: transparent;
-cursor: pointer;
-
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-transition: all 1s ease;
-
-&>:first-child{
-    animation: ${rotate} infinite 1.5s linear;
-}
-
-&>:last-child{
-    display: ${props => props.click ? 'none' :'inline-block'  };
-    padding-top: 1rem;
-}
 `
 
 const DarkDiv = styled.div`
@@ -126,10 +47,6 @@ transition: height 0.5s ease, width 1s ease 0.5s;
 
 
 const Main = () => {
-
-    const [click, setClick] = useState(false);
-
-    const handleClick = () => setClick(!click);
 
     return (
         <MainContainer>
