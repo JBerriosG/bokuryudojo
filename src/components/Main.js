@@ -29,7 +29,7 @@ font-size: 20rem;
 color:#ffffff;
 font-family: 'Roboto';
 
-&>:before, &>:after{
+&>:before{
     position: absolute;
     content: attr(data-text);
     padding: 30px;
