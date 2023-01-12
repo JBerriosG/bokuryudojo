@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 
 const MainContainer = styled.div`
-background: #a0a0a1;
+background: #000000;
 width: 100vw;
 height: 100vh;
 overflow:hidden;
@@ -35,6 +35,7 @@ const Main = () => {
         <MainContainer>
             <Container>
                 <Error>404</Error>
+                <Error>WebSite Down</Error>
             </Container>
         </MainContainer>
     )
