@@ -24,9 +24,32 @@ text-align:center;
 `
 
 const Error = styled.h1`
+position: relative;
 font-size: 20rem;
 color:#ffffff;
 font-family: 'Roboto';
+
+&>:before, &>:after{
+    position: absolute;
+    content: attr(data-text);
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    overflow: hidden;
+}
+
+&>:before{
+    left: 3px;
+    text-shadows: -2px 0 red;
+}
+
+&>:after{
+    left: -3px;
+    text-shadows: -2px 0 red;
+}
 `
 const WsDown = styled.h2`
 color:#ffffff;
@@ -39,7 +62,7 @@ const Main = () => {
     return (
         <MainContainer>
             <Container>
-                <Error>404</Error>
+                <Error data-text="404">404</Error>
                 <WsDown>WebSite Down</WsDown>
             </Container>
         </MainContainer>
