@@ -1,4 +1,3 @@
-
 import React from 'react'
 import styled from 'styled-components'
 ;
@@ -20,18 +19,6 @@ h2,h3,h4,h5,h6{
 const Container = styled.div`
 padding: 2rem;
 `
-
-const BottomBar = styled.div`
-position: absolute;
-bottom: 1rem;
-left: 0;
-right: 0;
-width: 100%;
-
-display: flex;
-justify-content: space-evenly;
-`
-
 const DarkDiv = styled.div`
 position: absolute;
 top: 0;
