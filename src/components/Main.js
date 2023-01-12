@@ -36,6 +36,15 @@ text-align:center;
     color: #fff;
     overflow: hidden;
 }
+
+.text:before{
+    left: 3px;
+    text-shadows:-2px 0 red;
+}
+.text:after{
+    left: -3px;
+    text-shadows:-2px 0 blue;
+}
 `
 
 const Main = () => {
