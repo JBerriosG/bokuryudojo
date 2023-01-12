@@ -185,7 +185,7 @@ const Main = () => {
     return (
         <Container>
             <div className='content'>
-                <div data-text='404 Web_Site_Down' className='text'>404 Web_Site_Down</div>
+                <div data-text='404 Web_Down' className='text'>404 Web_Down</div>
             </div>
         </Container>
     )
