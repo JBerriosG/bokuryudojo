@@ -29,7 +29,7 @@ font-size: 20rem;
 color:#ffffff;
 font-family: 'Roboto';
 
-&>:before{
+&>::before{
     position: absolute;
     content: attr(data-text);
     padding: 30px;
@@ -41,12 +41,12 @@ font-family: 'Roboto';
     overflow: hidden;
 }
 
-&>:before{
+&>::before{
     left: 3px;
     text-shadows: -2px 0 red;
 }
 
-&>:after{
+&>::after{
     left: -3px;
     text-shadows: -2px 0 red;
 }
