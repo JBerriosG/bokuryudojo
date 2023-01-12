@@ -24,7 +24,7 @@ text-align:center;
 `
 
 const Error = styled.h1`
-transform: scale(2);
+font-size: 20rem;
 color:#ffffff;
 font-family: 'Roboto';
 `
