@@ -40,16 +40,6 @@ font-family: 'Roboto';
     color: #fff;
     overflow: hidden;
 }
-
-&>::before{
-    left: 3px;
-    text-shadows: -2px 0 red;
-}
-
-&>::after{
-    left: -3px;
-    text-shadows: -2px 0 red;
-}
 `
 const WsDown = styled.h2`
 color:#ffffff;
