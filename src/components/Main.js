@@ -31,7 +31,7 @@ background-color: black;
   }
   @media(min-width: 1080px){
     .content .text{
-        font-size: 5rem;
+        font-size: 4rem;
     }
   }
   .content .text:before,
