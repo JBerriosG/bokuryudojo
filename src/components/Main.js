@@ -18,11 +18,16 @@ background-color: black;
     position: relative;
     color: #fff;
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 1.5rem;
     transform: scale(2);
     padding: 30px;
     letter-spacing: 2px;
     text-transform: uppercase;
+  }
+  @media(min-width: 768px){
+    .content .text{
+        font-size: 5rem;
+    }
   }
   .content .text:before,
   .content .text:after {
