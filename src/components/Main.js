@@ -26,6 +26,11 @@ background-color: black;
   }
   @media(min-width: 768px){
     .content .text{
+        font-size: 2.5rem;
+    }
+  }
+  @media(min-width: 1080px){
+    .content .text{
         font-size: 5rem;
     }
   }
